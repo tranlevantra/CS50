@@ -1,0 +1,92 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    background-image: linear-gradient(white, floralwhite, #f28e8e, #a51c30);
+}
+
+section {
+    margin: 120px 0;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+img {
+    border-radius: 4px;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+}
+
+button {
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 0 auto;
+    display: block;
+    background-color: floralwhite;
+    border: 2px solid #a51c30;
+    color: #a51c30;
+    font-size: 20px;
+    line-height: 15px;
+    padding: 14px 24px;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    border: floralwhite;
+    color: floralwhite;
+    background: #a51c30;
+    cursor: pointer;
+}
+
+.headingSigniIn4 {
+    color: #a51c30;
+}
+
+.menu {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #a51c30;
+}
+
+.menu:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.significant {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.signiIn4 {
+    color: floralwhite;
+    font-weight: bold;
+}

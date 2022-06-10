@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS50</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <section>
+        <h1>CS<span class="headingSigniIn4">50</span></h1>
+
+        <h2>
+            An introduction to <span class="headingSigniIn4">Computer Science</span>
+        </h2>
+
+        <br />
+
+        <ul>
+            <li>
+                <a class="menu" href="https://cs50.harvard.edu/college/2022/spring/" target="_blank">Course</a
+          >
+        </li>
+
+        <li>
+          <a
+            class="menu"
+            href="https://cs50.harvard.edu/college/2022/spring/staff/"
+            target="_blank"
+            >Staff</a
+          >
+        </li>
+
+        <li>
+          <a
+            class="menu"
+            href="https://cs50.harvard.edu/college/2022/spring/tutorials/"
+            target="_blank"
+            >Tutorials</a
+          >
+        </li>
+
+        <li>
+          <a
+            class="menu"
+            href="https://cs50.harvard.edu/college/2022/spring/#announcements"
+            target="_blank"
+            >Announcements</a
+          >
+        </li>
+      </ul>
+
+      <p>
+        <strong>CS50</strong> (Computer Science 50) is an
+        <strong>on-campus</strong> and
+        <strong>online introductory course</strong> on computer science taught
+        at 🤓<strong>Harvard University</strong> and, as of 2015, 😎<strong
+          >Yale University</strong
+        >
+        as well. Records and Audios of CS50 classes are available on Youtube for
+        FREE. This course has been an igniter for anyone who is interested in
+        Computer Science, including me 😉
+      </p>
+
+      <hr />
+
+      <br />
+
+      <img
+        src="https://www.tun.com/courses/wp-content/uploads/2019/12/8f8e5124-1dab-47e6-8fa6-3fbdc0738f0a-974ffb43cd83.small_.jpg"
+        alt="This is CS50"
+      />
+
+      <br />
+      <br />
+
+      <div class="significant">
+        🙌<span class="signiIn4"><em>2/3</em></span> of CS50 students have never
+        taken CS before🙌
+      </div>
+      <div class="significant">
+        🤞What ultimately matters in this course is
+        <span class="signiIn4"
+          ><em
+            >not so much where you end up relative to your classmates</em
+          ></span
+        >
+
+        but
+        <span class="signiIn4"
+          ><em>where you end up relative to yourself when you began!</em
+          >💪</span
+        >
+      </div>
+
+      <br />
+      <br />
+
+      <button>Register Now</button>
+    </section>
+
+    <script>
+      function registerNow() {
+        let name = prompt("What's your name?");
+        let campus = prompt("Which college are you in?");
+        campus = campus.toLowerCase();
+        alert(
+          "CS50 is an offline course for Harvard & Yale and online one elsewhere!"
+        );
+        let heading = document.querySelector("h2");
+        if (campus === "harvard" || campus === "yale") {
+          heading.innerHTML =
+            "Hi " + name + ", Let's book our meeting on campus now 😘";
+        } else {
+          heading.innerHTML =
+            "Hi " + name + ", Let's meet via Zoom and Youtube 🥰";
+        }
+      }
+      let registerNowButton = document.querySelector("button");
+      registerNowButton.addEventListener("click", registerNow);
+    </script>
+  </body>
+</html>
